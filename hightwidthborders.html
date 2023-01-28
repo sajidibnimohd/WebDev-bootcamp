@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hight width border and background</title>
+    <style>
+        #firstpara{
+            background-color: yellow;
+            height: 50px;
+            width: 245px;
+            border: 4px solid black;
+            border-radius: 11px;
+            /*above line is batter than lower lines*/
+           /* border-width:4px ;
+            border-style: solid;
+            border-color: green;
+            border-radius: 11px;*/
+        }
+            #secondpara{
+            background-color: blue;
+            height: 40px;
+            width: 245px;
+            border: 6px solid green;
+            border-radius: 9px;
+            border-top: 4px solid black;
+            border-bottom:4px solid rgb(566, 77, 89);
+            border-right: 4px solid rgb(99, 76,89);
+            }  
+            #thridpara{
+                height: 569px;
+                width: 562px;
+                background-image: url('image.jpg');
+                border: 4px solid green;
+                background-repeat:no-repeat;/*repeat-x,repeat-y*/
+               /* background-position: 50px 45px;*/
+                background-position: bottom right;
+            }
+    </style>
+</head>
+<body>
+    <h2>This is first heading</h2>
+    <p id="firstpara">this is my paragraph in this program</p>
+    <h2>This is second heading</h2>
+    <p id="secondpara">this my second paragraph in this program</p>
+    <h2>this my third heading</h2>
+    <p id="thridpara">this is thrid paragraph in this  program</p>
+
+</body>
+</html>
