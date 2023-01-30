@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string comparsion</title>
+</head>
+<body>
+    <script>
+        function comparestring(){
+            var string1=document.getElementById("string1").value;
+            var string2=document.getElementById("string2").value;
+            if(string1==string2){
+                document.getElementById("result").innerHTML="string are the same";
+            }
+            else{
+                document.getElementById("result").innerHTML="string are different";
+            }
+        }
+    </script>
+    <h1>String comparsion</h1>
+    <input type="text"id="string1" placeholder="enter first string">
+    <br>
+    <input type="text"id="string2" placeholder="enter second string">
+    <br>
+    <button onclick="comparestring()">compare string</button>
+    <span id="result"></span>
+
+</body>
+</html>
