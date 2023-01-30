@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Quadratic Equation</title>
+<script type="text/javascript">
+    function roots(){
+var a = prompt("Enter value of a","1");
+var b = prompt("Enter value of b","4");
+var c = prompt("Enter value of c","4");
+var root_part = Math.sqrt(b * b - 4 * a * c);
+var denom = 2 * a;
+var root1 = ( -b + root_part ) / denom;
+var root2 = ( -b - root_part ) / denom;
+document.write("1st root: "+root1+"<br />");
+document.write("2nd root: "+root2+"<br />");}
+
+    </script>
+</head>
+<body>
+    <h1>calcalute roots of qe</h1>
+    <p> a q e is of the form of :ax2 + bx + c = 0;</p>
+    <input type="button"onclick="roots()"value="calculate root(s)">
+</body>
+</html>
