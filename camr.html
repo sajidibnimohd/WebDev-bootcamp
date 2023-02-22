@@ -1,0 +1,55 @@
+<!DOCTYPE Html>
+<Html Lang="En">
+<Head>
+<Meta Charset="UTF-8" />
+<Meta Http-Equiv="X-UA-Compatible" Content="IE=Edge" />
+<Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0" />
+<Title>Camera Icon</Title>
+<Link Rel="Stylesheet" Href="Style.Css" />
+</Head>
+<Body>
+<Svg Id="MainSVG" Xmlns="Http://Www.W3.Org/2000/Svg" ViewBox="200 150 400 300">
+<Defs>
+<Filter Id="Glow" X="-100%" Y="-100%" Width="250%" Height="250%">
+<FeGaussianBlur StdDeviation="15" Result="ColoredBlur" />
+<FeOffset Dx="0" Dy="0" Result="Offsetblur"></FeOffset>
+<FeFlood Id="GlowAlpha" Flood-Color="Red" Flood-Opacity="1"></FeFlood>
+<FeComposite In2="Offsetblur" Operator="In"></FeComposite>
+<FeMerge>
+<FeMergeNode/>
+<FeMergeNode In="SourceGraphic"></FeMergeNode>
+</FeMerge>
+</Filter>
+<Filter Id="Bevel" FilterUnits="ObjectBoundingBox" X="-10%" Y="-10%" Width="150%" Height="150%">
+<FeGaussianBlur In="SourceAlpha" StdDeviation="2" Result="Blur"/>
+<FeSpecularLighting In="Blur" SurfaceScale="5" SpecularConstant="0.125" SpecularExponent="10" Result="SpecOut" Lighting-Color="White">
+<FePointLight X="-5000" Y="-10000" Z="20000"/>
+</FeSpecularLighting>
+<FeComposite In="SpecOut" In2="SourceAlpha" Operator="In" Result="SpecOut2"/>
+<FeComposite In="SourceGraphic" In2="SpecOut2" Operator="Arithmetic" K1="0" K2="1" K3="1" K4="0" Result="LitPaint" />
+</Filter>
+<Filter Id="Shadow" X="-100%" Y="-100%" Width="250%" Height="250%">
+<FeGaussianBlur StdDeviation="5" Result="ColoredBlur" />
+<FeOffset Dx="-0" Dy="2" Result="Offsetblur"></FeOffset>
+<FeFlood Id="GlowAlpha" Flood-Color="#000" Flood-Opacity="0.65"></FeFlood>
+<FeComposite In2="Offsetblur" Operator="In"></FeComposite>
+<FeMerge>
+<FeMergeNode/>
+<FeMergeNode In="SourceGraphic"></FeMergeNode>
+</FeMerge>
+</Filter>
+</Defs>
+<G Id="Icon" Fill="#44484D">
+<Rect X=360.73 Y=275 Width="70.27" Height="50" Rx="7.5" Fill="#555b60"/>
+<Path Id="Lens" D="M419.36,303.25l30.12,17.39a3.75,3.75,0,0,0,5.62-3.25V282.61a3.75,3.75,0,0,0-5.62-3.25l-30.12,17.39A3.75,3.75,0,0,0,419.36,303.25Z" Fill="#555b60"/>
+</G>
+<G Id="Shad" Filter="Url(#Shadow)">
+<G Id="MainLine" Filter="Url(#Glow)">
+<Line Filter="Url(#Bevel)" X1="360.73" Y1="260.73" X2="439.27" Y2="343.72" Fill="None" Stroke="#Ed002d" Stroke-Linecap="Round" Stroke-Miterlimit="10" Stroke-Width="7"/>
+</G>
+</G>
+</Svg>
+<Script Src="Https://Unpkg.Co/Gsap@3/Dist/Gsap.Min.Js"></Script>
+<Script Src="Https://S3-Us-West-2.Amazonaws.Com/S.Cdpn.Io/16327/DrawSVGPlugin3.Min.Js"></Script>
+<Script Src="Index.Js"></Script>
+</Html>
