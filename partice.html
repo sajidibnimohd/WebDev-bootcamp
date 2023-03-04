@@ -5,60 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>box style</title>
-    <style>
-        *{
-            box-sizing: border box;
-            margin:0;
-            padding:0;
-        }
-        
-            body{
-            background-color: rgb(100, 102, 18);
-            }
-        .container {
-            background-color: rgb(668 85 45 / 32%);
-            border: 4px solid rgb(255, 94, 0);
-            padding: 49px 99px 44px 34px;
-/*padding=top,
-            right,
-            buttom,
-            left;
-            /* padding: 66px;
-            margin: 34px;
-            padding-left: 89px;*/
-            margin-left: 98px;
-            margin-bottom: 38px;
-            border-radius: 73px;
-            width: 244px;
-        
-        }
-    </style>
+    <title>navigation menu</title>
 </head>
+<style>
+    .games ul {
+        background-color: rgb(161, 111, 111);
+        border-radius: 14px;
+    }
+
+    .games li {
+        float: left;
+        list-style: none;
+        padding: 3px 19px;
+        margin: 2px;
+
+    }
+
+    .games ul {
+        overflow: auto;
+    }
+    .icon{
+        float: right;
+        padding: 3px 4px;
+        margin: 2px;
+        
+    }
+    .games input{
+            border-radius: 12px;
+            padding: 2px 4px;
+            width: 122px
+</style>
 
 <body>
-    <div class="container">
-        <h3>this is my fisrt paragraph</h3>
-        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim similique neque corrupti architecto
-            quae quam iure harum doloremque sed, deserunt maxime fuga quod? Expedita, minima animi enim laboriosam saepe
-            illo.</p>
-    </div>
-    <div class="container">
-        <h3>this is my 2nd paragraph</h3>
-        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non est obcaecati eligendi libero
-            laudantium animi culpa ipsum nulla facilis perspiciatis qui eveniet esse quis eum, ab voluptas! Vero,
-            dolorem necessitatibus?</p>
 
-    </div>
-    <div class="container">
-        <h3>this my third paragrapk</h3>
-        <p id="thrid">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatibus dolorem debitis aut
-            recusandae molestiae numquam ullam, maxime dolorum consectetur suscipit similique fuga eligendi? Doloremque
-            optio sequi nihil magni obcaecati!
-        </p>
+    <header>
+        <gam class="games">
+            <ul>
+                <li>Cricket</li>
+                <li>Football</li>
+                <li>Volleyball</li>
+                <li>Hockey</li>
 
-    </div>
+
+                <div class="icon">
+
+                    <input type="text" placeholder="search">
+                </div>
+            </ul>
+        </gam>
+    </header>
 </body>
 
 </html>

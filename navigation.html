@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        .navbar {
+            background-color: rgb(102, 166, 209);
+            border-radius:18px;
+            width: 555;
+        
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /*used to remove all bullets points in the navigation bat*/
+            margin: 4px 9px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /* after the writing above code background color removed due to overflow parent for avoid this we use this line of code*/
+        }
+        .navbar li a{
+            padding: 2px 4px;
+            text-decoration: none;
+            color: rgb(214, 198, 198);
+
+        }
+        .narbar li a :hover{
+            color: rgb(156, 209, 156);
+        }
+        .search{
+            float: right;
+            padding: 3px 2px;
+            margin: 2px;
+            border-radius: 22px;
+            
+        }
+        .navbar input{
+            border-radius: 12px;
+            padding: 2px 4px;
+            width: 122px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a herf="#"></a>Name</li>
+                <li><a herf="#"></a>About</li>
+                <li><a herf="#"></a>Service</li>
+                <li><a herf="#"></a>Contact us</li>
+                <div class="search">
+                 <input type="text"name="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+
+</html>
